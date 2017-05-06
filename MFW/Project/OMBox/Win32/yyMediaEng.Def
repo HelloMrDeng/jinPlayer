@@ -1,0 +1,9 @@
+LIBRARY	yyMediaEng.dll
+
+EXPORTS
+	yyMediaInit
+	yyMediaCreate
+	yyMediaDestroy
+	yyMediaUninit
+	
+	

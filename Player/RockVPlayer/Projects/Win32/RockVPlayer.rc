@@ -1,0 +1,218 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_ROCKVPLAYER         ICON                    "RockVPlayer.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_ROCKVPLAYER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_ROCKVPLAYER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 170, 62
+STYLE DS_SETFONT | DS_MODALFRAME | DS_FIXEDSYS | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About RockVPlayer"
+FONT 8, "MS Shell Dlg", 0, 0, 0x1
+BEGIN
+    ICON            128,IDC_STATIC,14,14,21,20
+    LTEXT           "RockVPlayer, Version 1.0",IDC_STATIC,42,14,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,42,26,114,8
+    DEFPUSHBUTTON   "OK",IDOK,113,41,50,14,WS_GROUP
+END
+
+IDD_DIALOG_MAIN DIALOGEX 0, 0, 272, 193
+STYLE DS_SETFONT | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "RockVPlayer"
+FONT 12, "Times New Roman", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_FILE,7,7,128,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_BUTTON_OPEN,139,7,35,13
+    COMBOBOX        IDC_COMBO_LESSON,181,7,84,104,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Drum",IDC_STATIC_1,44,34,83,11
+    CONTROL         "",IDC_SLIDER_1,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,46,122,13
+    CONTROL         "Enable",IDC_CHECK_1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,29,34,14
+    GROUPBOX        "Music Tracks",IDC_STATIC,7,21,168,142
+    LTEXT           "",IDC_STATIC_POS,7,176,257,10,NOT WS_VISIBLE | WS_BORDER
+    PUSHBUTTON      "Play",IDC_BUTTON_PLAY,179,149,28,14
+    PUSHBUTTON      "Pause",IDC_BUTTON_PAUSE,208,149,28,14
+    PUSHBUTTON      "Stop",IDC_BUTTON_STOP,237,149,28,14
+    CONTROL         134,IDC_BMP_1,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_RIGHTJUST | SS_REALSIZEIMAGE | WS_BORDER,7,34,31,24,WS_EX_TRANSPARENT
+    LTEXT           "Ukulele",IDC_STATIC_2,44,66,83,11
+    CONTROL         "",IDC_SLIDER_2,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,78,122,13
+    CONTROL         "Enable",IDC_CHECK_2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,61,34,14
+    CONTROL         138,IDC_BMP_2,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_RIGHTJUST | SS_REALSIZEIMAGE | WS_BORDER,7,66,31,24,WS_EX_TRANSPARENT
+    LTEXT           "Piano",IDC_STATIC_3,44,99,83,11
+    CONTROL         "",IDC_SLIDER_3,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,111,122,13
+    CONTROL         "Enable",IDC_CHECK_3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,94,34,14
+    CONTROL         137,IDC_BMP_3,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_RIGHTJUST | SS_REALSIZEIMAGE | WS_BORDER,7,99,31,24,WS_EX_TRANSPARENT
+    LTEXT           "Beisi",IDC_STATIC_4,44,132,83,11
+    CONTROL         "",IDC_SLIDER_4,"msctls_trackbar32",TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,40,144,122,13
+    CONTROL         "Enable",IDC_CHECK_4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,130,127,34,14
+    CONTROL         136,IDC_BMP_4,"Static",SS_BITMAP | SS_CENTERIMAGE | SS_RIGHTJUST | SS_REALSIZEIMAGE | WS_BORDER,7,132,31,24,WS_EX_TRANSPARENT
+    GROUPBOX        "Repeats",IDC_STATIC,182,21,82,122
+    CONTROL         "Repeat A",IDC_RADIO_A,"Button",BS_AUTORADIOBUTTON,188,55,65,12
+    CONTROL         "Repeat B",IDC_RADIO_B,"Button",BS_AUTORADIOBUTTON,188,77,65,12
+    CONTROL         "Repeat C",IDC_RADIO_C,"Button",BS_AUTORADIOBUTTON,188,99,65,12
+    CONTROL         "Repeat D",IDC_RADIO_D,"Button",BS_AUTORADIOBUTTON,188,121,65,12
+    CONTROL         "Repeat None",IDC_RADIO_0,"Button",BS_AUTORADIOBUTTON,188,33,65,12
+    LTEXT           "00:00:00",IDC_STATIC_PLAYTIME,7,167,38,9
+    LTEXT           "00:00:00",IDC_STATIC_DURATION,227,167,38,9,0,WS_EX_RIGHT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 163
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+
+    IDD_DIALOG_MAIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 265
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 186
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_DRUM         BITMAP                  "C:\\Work\\yyMedia\\trunk\\Player\\RockVPlayer\\Projects\\Res\\drum.bmp"
+IDB_BITMAP_BEISI        BITMAP                  "C:\\Work\\yyMedia\\trunk\\Player\\RockVPlayer\\Projects\\Res\\Beisi.bmp"
+IDB_BITMAP_PIANO        BITMAP                  "C:\\Work\\yyMedia\\trunk\\Player\\RockVPlayer\\Projects\\Res\\Piano.bmp"
+IDB_BITMAP_UKULELE      BITMAP                  "C:\\Work\\yyMedia\\trunk\\Player\\RockVPlayer\\Projects\\Res\\Ukulele.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "RockVPlayer"
+    IDC_ROCKVPLAYER         "ROCKVPLAYER"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

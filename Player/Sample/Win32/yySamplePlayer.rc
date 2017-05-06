@@ -1,0 +1,250 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_YYPLAYER            ICON                    "yySamplePlayer.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_YYPLAYER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open File",                   ID_FILE_OPENFILE
+        MENUITEM SEPARATOR
+        MENUITEM "Play",                        ID_PLAY_PLAY
+        MENUITEM "Pause",                       ID_PLAY_PAUSE
+        MENUITEM "Stop",                        ID_PLAY_STOP
+        MENUITEM SEPARATOR
+        MENUITEM "DD-Memory",                   ID_FILE_DDMEMORY
+        MENUITEM "DD-Overlay",                  ID_FILE_DDOVERLAY
+        MENUITEM SEPARATOR
+        MENUITEM "Disable Render",              ID_FILE_DISABLEVIDEO
+        MENUITEM "Disable Decoder",             ID_FILE_DISABLEDECODER
+        MENUITEM "Enable Video",                ID_FILE_ENABLEVIDEO
+        MENUITEM SEPARATOR
+        MENUITEM "Seek KeyFrame",               ID_FILE_SEEKKEYFRAME
+        MENUITEM "Seek AnyPos",                 ID_FILE_SEEKANYPOS
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Tools"
+    BEGIN
+        MENUITEM "File Info",                   ID_TOOLS_FILEINFO
+        MENUITEM SEPARATOR
+        MENUITEM "ThumbNail",                   ID_TOOLS_THUMBNAIL
+        MENUITEM SEPARATOR
+        MENUITEM "Full Screen",                 ID_TOOLS_FULLSCREEN
+    END
+    POPUP "Speed"
+    BEGIN
+        MENUITEM "0.2 X",                       ID_SPEED_0
+        MENUITEM "0.5 X",                       ID_SPEED_1
+        MENUITEM "1.0 X",                       ID_SPEED_3
+        MENUITEM "1.5 X",                       ID_SPEED_2
+        MENUITEM "2 X",                         ID_SPEED_2X
+        MENUITEM "4 X",                         ID_SPEED_4X
+        MENUITEM "8 X",                         ID_SPEED_8X
+    END
+    POPUP "AspectRatio"
+    BEGIN
+        MENUITEM "4 X 3",                       ID_ASPECTRATIO_4X3
+        MENUITEM "16 X 9",                      ID_ASPECTRATIO_16X9
+        MENUITEM "FitWindow",                   ID_ASPECTRATIO_FITWINDOW
+        MENUITEM "Original",                    ID_ASPECTRATIO_ORIGINAL
+    END
+    POPUP "VideoZoom"
+    BEGIN
+        MENUITEM "1.5 X",                       ID_VIDEOZOOM_1
+        MENUITEM "2 X",                         ID_VIDEOZOOM_2X
+        MENUITEM "4 X",                         ID_VIDEOZOOM_4X
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_YYPLAYER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 171, 78
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE 0x80000000L
+CAPTION "About yyPlayer"
+FONT 8, "MS Sans Serif", 0, 0, 0x0
+BEGIN
+    CONTROL         133,IDC_STATIC,"Static",SS_BITMAP,11,11,21,18
+    LTEXT           "yyPlayer Version 1.0.1.10",IDC_STATIC,41,12,112,8,SS_NOPREFIX
+    LTEXT           "Copyright (C)  CanSure 2013",IDC_STATIC,41,26,108,8
+    LTEXT           "cansure69@cansure.cn",IDC_STATIC,41,40,108,8
+    LTEXT           "+86 21 34727188",IDC_STATIC,41,54,108,8
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 147
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 55
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,1,10
+ PRODUCTVERSION 1,0,1,10
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "Comments", "YY Player"
+            VALUE "CompanyName", "YY Multi Media"
+            VALUE "FileDescription", "yyPlayer Application"
+            VALUE "FileVersion", "1, 0, 1, 10"
+            VALUE "InternalName", "yyPlayer"
+            VALUE "LegalCopyright", "Copyright (C) 2013"
+            VALUE "OriginalFilename", "yyPlayer.exe"
+            VALUE "ProductName", "yyPlayer Application"
+            VALUE "ProductVersion", "1, 0, 1, 10"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "yyPlayer"
+    IDC_YYPLAYER            "YYPLAYER"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

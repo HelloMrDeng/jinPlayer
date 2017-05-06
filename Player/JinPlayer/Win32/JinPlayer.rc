@@ -1,0 +1,736 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#ifndef APSTUDIO_INVOKED
+#include "targetver.h"
+#endif
+#define APSTUDIO_HIDDEN_SYMBOLS
+#include "windows.h"
+#undef APSTUDIO_HIDDEN_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDC_JINPLAYER MENU 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "Open File",                   ID_FILE_OPENFILE
+        MENUITEM "Open URL",                    ID_FILE_OPENURL
+        MENUITEM SEPARATOR
+        MENUITEM "File System",                 ID_FILE_FOLDERVIEW
+        MENUITEM "Play List",                   ID_FILE_PLAYLISTVIEW
+        POPUP "MyBox"
+        BEGIN
+            MENUITEM "Open Box",                    ID_MYBOX_OPENBOX
+            MENUITEM SEPARATOR
+            MENUITEM "New Box",                     ID_MYBOX_NEWBOX
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       IDM_EXIT
+    END
+    POPUP "Play"
+    BEGIN
+        POPUP "Video"
+        BEGIN
+            POPUP "Zoom"
+            BEGIN
+                MENUITEM "1.0 X",                       ID_VIDEOZOOM_1
+                MENUITEM "1.5 X",                       ID_VIDEOZOOM_2
+                MENUITEM "2.0 X",                       ID_VIDEOZOOM_3
+                MENUITEM "2.5 X",                       ID_VIDEOZOOM_4
+                MENUITEM "3.0 X",                       ID_VIDEOZOOM_5
+                MENUITEM "4.0 X",                       ID_VIDEOZOOM_6
+                MENUITEM "5.0 X",                       ID_VIDEOZOOM_7
+                MENUITEM "Select",                      ID_ZOOM_SELECT
+            END
+            MENUITEM SEPARATOR
+            POPUP "Rotate"
+            BEGIN
+                MENUITEM "0",                           ID_ROTATE_0
+                MENUITEM "90",                          ID_ROTATE_90
+                MENUITEM "180",                         ID_ROTATE_180
+                MENUITEM "270",                         ID_ROTATE_270
+            END
+            MENUITEM SEPARATOR
+            POPUP "Mode"
+            BEGIN
+                MENUITEM "GDI",                         ID_VIDEO_GDI
+                MENUITEM "DDRAW",                       ID_VIDEO_DDRAW
+            END
+            MENUITEM SEPARATOR
+            MENUITEM "Capture (F8)",                ID_VIDEO_CAPTURE
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "Audio "
+        BEGIN
+            MENUITEM "Track 1",                     ID_AUDIO_TRACK1
+        END
+        MENUITEM SEPARATOR
+        POPUP "Subtitle"
+        BEGIN
+            MENUITEM "Enable",                      ID_SUBTITLE_ENABLE
+            MENUITEM "Disable",                     ID_SUBTITLE_DISABLE
+            MENUITEM SEPARATOR
+            MENUITEM "Font",                        ID_SUBTITLE_FONT
+        END
+        MENUITEM SEPARATOR
+        POPUP "Speed"
+        BEGIN
+            MENUITEM "0.2",                         ID_SPEED_1
+            MENUITEM "0.4",                         ID_SPEED_2
+            MENUITEM "0.5",                         ID_SPEED_3
+            MENUITEM "0.8",                         ID_SPEED_4
+            MENUITEM "1.0",                         ID_SPEED_5
+            MENUITEM "1.5",                         ID_SPEED_6
+            MENUITEM "2.0",                         ID_SPEED_7
+            MENUITEM "4.0",                         ID_SPEED_8
+        END
+        MENUITEM SEPARATOR
+        POPUP "Ratio"
+        BEGIN
+            MENUITEM "Original",                    ID_RATIO_ORIGINAL
+            MENUITEM "4:3",                         ID_RATIO_43
+            MENUITEM "16:9",                        ID_RATIO_169
+            MENUITEM "Fit Window",                  ID_RATIO_FITWINDOW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Next File",                   ID_PLAY_NEXT
+        MENUITEM "Prev File",                   ID_PLAY_PREV
+    END
+    POPUP "&Help"
+    BEGIN
+        MENUITEM "&About ...",                  IDM_ABOUT
+        MENUITEM SEPARATOR
+        POPUP "Lang(语言)"
+        BEGIN
+            MENUITEM "English",                     ID_LANG_ENGLISH
+            MENUITEM SEPARATOR
+            MENUITEM "中文",                          ID_LANG_CHINESE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Check Update",                ID_HELP_UPDATE
+    END
+END
+
+IDR_MENU_POPUP MENU 
+BEGIN
+    POPUP "Item"
+    BEGIN
+        MENUITEM "Properties",                  ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      ID_ITEM_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "Import Box",                  ID_ITEM_IMPORTBOX
+    END
+    POPUP "MyBox"
+    BEGIN
+        MENUITEM "New Box",                     ID_MYBOX_NEWBOX
+        MENUITEM SEPARATOR
+        MENUITEM "Open Box",                    ID_MYBOX_OPENBOX
+    END
+    POPUP "BoxItem"
+    BEGIN
+        MENUITEM "Properties",                  ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Export",                      ID_BOXITEM_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "Delete",                      ID_ITEM_DELETE
+    END
+    POPUP "Play"
+    BEGIN
+        POPUP "Zoom"
+        BEGIN
+            MENUITEM "1.0 X",                       ID_VIDEOZOOM_1
+            MENUITEM "1.5 X",                       ID_VIDEOZOOM_2
+            MENUITEM "2.0 X",                       ID_VIDEOZOOM_3
+            MENUITEM "2.5 X",                       ID_VIDEOZOOM_4
+            MENUITEM "3.0 X",                       ID_VIDEOZOOM_5
+            MENUITEM "4.0 X",                       ID_VIDEOZOOM_6
+            MENUITEM "5.0 X",                       ID_VIDEOZOOM_7
+            MENUITEM "Select",                      ID_ZOOM_SELECT
+        END
+        MENUITEM SEPARATOR
+        POPUP "Rotate"
+        BEGIN
+            MENUITEM "0",                           ID_ROTATE_0
+            MENUITEM "90",                          ID_ROTATE_90
+            MENUITEM "180",                         ID_ROTATE_180
+            MENUITEM "270",                         ID_ROTATE_270
+        END
+        MENUITEM SEPARATOR
+        POPUP "Video"
+        BEGIN
+            MENUITEM "Full Screen",                 ID_VIDEO_FULLSCREEN
+            MENUITEM "Capture",                     ID_PLAY_CAPTURE
+        END
+        MENUITEM SEPARATOR
+        POPUP "Speed"
+        BEGIN
+            MENUITEM "0.2",                         ID_SPEED_1
+            MENUITEM "0.4",                         ID_SPEED_2
+            MENUITEM "0.5",                         ID_SPEED_3
+            MENUITEM "0.8",                         ID_SPEED_4
+            MENUITEM "1.0",                         ID_SPEED_5
+            MENUITEM "1.5",                         ID_SPEED_6
+            MENUITEM "2.0",                         ID_SPEED_7
+            MENUITEM "4.0",                         ID_SPEED_8
+        END
+        MENUITEM SEPARATOR
+        POPUP "Ratio"
+        BEGIN
+            MENUITEM "Original",                    ID_RATIO_ORIGINAL
+            MENUITEM "4:3",                         ID_RATIO_43
+            MENUITEM "16:9",                        ID_RATIO_169
+            MENUITEM "Fit Window",                  ID_RATIO_FITWINDOW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "Next",                        ID_PLAY_NEXT
+        MENUITEM "Prev",                        ID_PLAY_PREV
+        MENUITEM SEPARATOR
+        MENUITEM "Properties",                  ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "Return",                      ID_PLAY_RETURN
+    END
+END
+
+IDC_JINPLAYER_CHN MENU 
+BEGIN
+    POPUP "文件"
+    BEGIN
+        MENUITEM "打开文件",                        ID_FILE_OPENFILE
+        MENUITEM "打开链接",                        ID_FILE_OPENURL
+        MENUITEM SEPARATOR
+        MENUITEM "文件目录",                        ID_FILE_FOLDERVIEW
+        MENUITEM "播放列表",                        ID_FILE_PLAYLISTVIEW
+        POPUP "秘密宝盒"
+        BEGIN
+            MENUITEM "打开宝盒",                        ID_MYBOX_OPENBOX
+            MENUITEM SEPARATOR
+            MENUITEM "添加宝盒",                        ID_MYBOX_NEWBOX
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "文件属性",                        ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "退出",                          IDM_EXIT
+    END
+    POPUP "播放"
+    BEGIN
+        POPUP "视频"
+        BEGIN
+            POPUP "放大"
+            BEGIN
+                MENUITEM "1.0 X",                       ID_VIDEOZOOM_1
+                MENUITEM "1.5 X",                       ID_VIDEOZOOM_2
+                MENUITEM "2.0 X",                       ID_VIDEOZOOM_3
+                MENUITEM "2.5 X",                       ID_VIDEOZOOM_4
+                MENUITEM "3.0 X",                       ID_VIDEOZOOM_5
+                MENUITEM "4.0 X",                       ID_VIDEOZOOM_6
+                MENUITEM "5.0 X",                       ID_VIDEOZOOM_7
+                MENUITEM "自由选择",                        ID_ZOOM_SELECT
+            END
+            MENUITEM SEPARATOR
+            POPUP "旋转"
+            BEGIN
+                MENUITEM "0",                           ID_ROTATE_0
+                MENUITEM "90",                          ID_ROTATE_90
+                MENUITEM "180",                         ID_ROTATE_180
+                MENUITEM "270",                         ID_ROTATE_270
+            END
+            MENUITEM SEPARATOR
+            POPUP "模式"
+            BEGIN
+                MENUITEM "GDI",                         ID_VIDEO_GDI
+                MENUITEM "DDRAW",                       ID_VIDEO_DDRAW
+            END
+            MENUITEM SEPARATOR
+            MENUITEM " 截图(F8)",                     ID_VIDEO_CAPTURE
+            MENUITEM SEPARATOR
+        END
+        MENUITEM SEPARATOR
+        POPUP "音频"
+        BEGIN
+            MENUITEM "音轨 1",                        ID_AUDIO_TRACK1
+        END
+        MENUITEM SEPARATOR
+        POPUP "字幕"
+        BEGIN
+            MENUITEM "启用",                          ID_SUBTITLE_ENABLE
+            MENUITEM "禁止",                          ID_SUBTITLE_DISABLE
+            MENUITEM SEPARATOR
+            MENUITEM "字体",                          ID_SUBTITLE_FONT
+        END
+        MENUITEM SEPARATOR
+        POPUP "播放速度"
+        BEGIN
+            MENUITEM "0.2",                         ID_SPEED_1
+            MENUITEM "0.4",                         ID_SPEED_2
+            MENUITEM "0.5",                         ID_SPEED_3
+            MENUITEM "0.8",                         ID_SPEED_4
+            MENUITEM "1.0",                         ID_SPEED_5
+            MENUITEM "1.5",                         ID_SPEED_6
+            MENUITEM "2.0",                         ID_SPEED_7
+            MENUITEM "4.0",                         ID_SPEED_8
+        END
+        MENUITEM SEPARATOR
+        POPUP "画面比例"
+        BEGIN
+            MENUITEM "原始比例",                        ID_RATIO_ORIGINAL
+            MENUITEM "4:3",                         ID_RATIO_43
+            MENUITEM "16:9",                        ID_RATIO_169
+            MENUITEM "适应窗口",                        ID_RATIO_FITWINDOW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "下一个",                         ID_PLAY_NEXT
+        MENUITEM "上一个",                         ID_PLAY_PREV
+    END
+    POPUP "帮助"
+    BEGIN
+        MENUITEM "关于 ...",                      IDM_ABOUT
+        MENUITEM SEPARATOR
+        POPUP "Lang(语言)"
+        BEGIN
+            MENUITEM "English",                     ID_LANG_ENGLISH
+            MENUITEM SEPARATOR
+            MENUITEM "中文",                          ID_LANG_CHINESE
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "检查新版本",                       ID_HELP_UPDATE
+    END
+END
+
+IDR_MENU_POPUP_CHN MENU 
+BEGIN
+    POPUP "Item"
+    BEGIN
+        MENUITEM "属性",                          ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "删除",                          ID_ITEM_DELETE
+        MENUITEM SEPARATOR
+        MENUITEM "导入密盒",                        ID_ITEM_IMPORTBOX
+    END
+    POPUP "MyBox"
+    BEGIN
+        MENUITEM "添加宝盒",                        ID_MYBOX_NEWBOX
+        MENUITEM SEPARATOR
+        MENUITEM "打开宝盒",                        ID_MYBOX_OPENBOX
+    END
+    POPUP "BoxItem"
+    BEGIN
+        MENUITEM "属性",                          ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "导出",                          ID_BOXITEM_EXPORT
+        MENUITEM SEPARATOR
+        MENUITEM "删除",                          ID_ITEM_DELETE
+    END
+    POPUP "Play"
+    BEGIN
+        POPUP "放大"
+        BEGIN
+            MENUITEM "1.0 X",                       ID_VIDEOZOOM_1
+            MENUITEM "1.5 X",                       ID_VIDEOZOOM_2
+            MENUITEM "2.0 X",                       ID_VIDEOZOOM_3
+            MENUITEM "2.5 X",                       ID_VIDEOZOOM_4
+            MENUITEM "3.0 X",                       ID_VIDEOZOOM_5
+            MENUITEM "4.0 X",                       ID_VIDEOZOOM_6
+            MENUITEM "5.0 X",                       ID_VIDEOZOOM_7
+            MENUITEM "自由选择",                        ID_ZOOM_SELECT
+        END
+        MENUITEM SEPARATOR
+        POPUP "旋转"
+        BEGIN
+            MENUITEM "0",                           ID_ROTATE_0
+            MENUITEM "90",                          ID_ROTATE_90
+            MENUITEM "180",                         ID_ROTATE_180
+            MENUITEM "270",                         ID_ROTATE_270
+        END
+        MENUITEM SEPARATOR
+        POPUP "视频"
+        BEGIN
+            MENUITEM "全屏",                          ID_VIDEO_FULLSCREEN
+            MENUITEM "截图",                          ID_VIDEO_CAPTURE
+        END
+        MENUITEM SEPARATOR
+        POPUP "播放速度"
+        BEGIN
+            MENUITEM "0.2",                         ID_SPEED_1
+            MENUITEM "0.4",                         ID_SPEED_2
+            MENUITEM "0.5",                         ID_SPEED_3
+            MENUITEM "0.8",                         ID_SPEED_4
+            MENUITEM "1.0",                         ID_SPEED_5
+            MENUITEM "1.5",                         ID_SPEED_6
+            MENUITEM "2.0",                         ID_SPEED_7
+            MENUITEM "4.0",                         ID_SPEED_8
+        END
+        MENUITEM SEPARATOR
+        POPUP "画面比例"
+        BEGIN
+            MENUITEM "原始比例",                        ID_RATIO_ORIGINAL
+            MENUITEM "4:3",                         ID_RATIO_43
+            MENUITEM "16:9",                        ID_RATIO_169
+            MENUITEM "适应窗口",                        ID_RATIO_FITWINDOW
+        END
+        MENUITEM SEPARATOR
+        MENUITEM "下一个",                         ID_PLAY_NEXT
+        MENUITEM "上一个",                         ID_PLAY_PREV
+        MENUITEM SEPARATOR
+        MENUITEM "属性",                          ID_FILE_PROPERTIES
+        MENUITEM SEPARATOR
+        MENUITEM "返回",                          ID_PLAY_RETURN
+    END
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDI_JINPLAYER           ICON                    "JinPlayer.ico"
+IDI_SMALL               ICON                    "small.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDC_JINPLAYER ACCELERATORS 
+BEGIN
+    "?",            IDM_ABOUT,              ASCII,  ALT
+    "/",            IDM_ABOUT,              ASCII,  ALT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 248, 148
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About JinPlayer"
+FONT 12, "Times New Roman", 400, 0, 0x0
+BEGIN
+    ICON            IDI_SMALL,IDC_STATIC,75,108,20,20
+    LTEXT           "JinPlayer, Version 1.0 B105",IDC_STATIC_VER,95,106,114,8,SS_NOPREFIX
+    LTEXT           "Copyright (C) 2014",IDC_STATIC,95,116,114,8
+    DEFPUSHBUTTON   "OK",IDOK,94,127,50,14,WS_GROUP
+    EDITTEXT        IDC_EDIT_ABOUT,7,7,234,95,ES_MULTILINE | ES_READONLY
+END
+
+IDD_DIALOG_COPY DIALOGEX 0, 0, 196, 52
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Export Files"
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Cancel",IDCANCEL,72,31,50,14
+    CONTROL         "",IDC_PROGRESS_COPY,"msctls_progress32",WS_BORDER,7,7,182,14
+END
+
+IDD_DIALOG_FILEINFO DIALOGEX 0, 0, 396, 312
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_ACCEPTFILES
+CAPTION "File Information"
+FONT 12, "@SimSun-ExtB", 700, 0, 0x86
+BEGIN
+    PUSHBUTTON      "Open",IDC_BUTTON_OPEN,348,7,43,16
+    EDITTEXT        IDC_EDIT_FILE,7,7,336,15,ES_AUTOHSCROLL | ES_READONLY
+    COMBOBOX        IDC_COMBO_FILE,224,27,119,84,CBS_DROPDOWN | CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    EDITTEXT        IDC_EDIT_INFO,7,48,385,264,ES_MULTILINE | ES_AUTOVSCROLL | ES_AUTOHSCROLL | ES_READONLY | ES_WANTRETURN | WS_VSCROLL
+    CONTROL         "",IDC_PROGRESS_READ,"msctls_progress32",PBS_SMOOTH | PBS_SMOOTHREVERSE | WS_BORDER,7,27,176,12
+    PUSHBUTTON      "Pause",IDC_BUTTON_READ,188,26,31,14
+    CONTROL         "Video Dec",IDC_CHECK_VIDEODEC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,345,24,53,16
+END
+
+IDD_DIALOG_NEWBOX DIALOGEX 0, 0, 189, 82
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "New Box"
+FONT 12, "Times New Roman", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,29,67,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,112,67,50,14
+    EDITTEXT        IDC_EDIT_PW1,51,14,131,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Password",IDC_STATIC_PW,13,15,32,13
+    EDITTEXT        IDC_EDIT_PW2,51,32,131,13,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "Confirm",IDC_STATIC_PW2,13,34,32,13
+    EDITTEXT        IDC_EDIT_PATH,51,51,131,13,ES_AUTOHSCROLL | ES_READONLY
+    PUSHBUTTON      "Folder",IDC_BUTTON_FOLDER,7,50,43,14
+    CTEXT           "The password must be six number or chars.",IDC_STATIC_PWINFO,2,2,186,10
+END
+
+IDD_DIALOG_URL DIALOGEX 0, 0, 398, 154
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open URL......"
+FONT 10, "MS Sans Serif", 400, 0, 0x0
+BEGIN
+    EDITTEXT        IDC_EDIT_URL,7,7,286,17,ES_AUTOHSCROLL
+    PUSHBUTTON      "Open",IDC_BUTTON_OPEN,295,7,32,17
+    LISTBOX         IDC_LIST_URL,7,30,387,121,LBS_MULTIPLESEL | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Delete",IDC_BUTTON_DELETE,365,7,29,17
+    PUSHBUTTON      "Add",IDC_BUTTON_ADD,330,7,32,17
+END
+
+IDD_DIALOG_IMPORT DIALOGEX 0, 0, 228, 118
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Import Files"
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Add",ID_BUTTON_ADD,152,68,36,14
+    CONTROL         "",IDC_PROGRESS_COPY,"msctls_progress32",WS_BORDER,1,84,227,14
+    LISTBOX         IDC_LIST_FILE,1,2,227,66,LBS_MULTIPLESEL | LBS_NOINTEGRALHEIGHT | WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "Cancel",IDCANCEL,128,102,50,14
+    CONTROL         "Delete Original File",IDC_CHECK_DELETE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,1,72,75,9
+    PUSHBUTTON      "Start",ID_BUTTON_START,50,102,50,14
+    PUSHBUTTON      "Delete",ID_BUTTON_DELETE,192,68,36,14
+    CONTROL         "Close Finished",IDC_CHECK_CLOSE,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,80,72,67,9
+END
+
+IDD_DIALOG_UPDATE DIALOGEX 0, 0, 310, 159
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "JinPlayer Update"
+FONT 12, "Microsoft Sans Serif", 400, 0, 0x0
+BEGIN
+    PUSHBUTTON      "Start",IDC_BUTTON_START,85,139,59,17
+    PUSHBUTTON      "Cancel",IDC_BUTTON_CANCEL,164,139,59,17
+    EDITTEXT        IDC_EDIT_CHANGED,2,2,306,121,ES_MULTILINE | ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "",IDC_PROGRESS_UPDATE,"msctls_progress32",WS_BORDER,2,124,307,11
+END
+
+IDD_DIALOG_OPENBOX DIALOGEX 0, 0, 128, 150
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Open Box"
+FONT 12, "Times New Roman", 400, 0, 0x0
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,18,134,44,14
+    PUSHBUTTON      "Cancel",IDCANCEL,67,134,42,14
+    EDITTEXT        IDC_EDIT_PW1,13,14,104,13,ES_PASSWORD | ES_AUTOHSCROLL
+    CTEXT           "The password must be six number or chars.",IDC_STATIC_PWINFO,2,2,126,10
+    PUSHBUTTON      "1",IDC_BUTTON_1,19,34,21,17
+    PUSHBUTTON      "2",IDC_BUTTON_2,53,34,21,17
+    PUSHBUTTON      "3",IDC_BUTTON_3,87,34,21,17
+    PUSHBUTTON      "4",IDC_BUTTON_4,19,59,21,17
+    PUSHBUTTON      "5",IDC_BUTTON_5,53,59,21,17
+    PUSHBUTTON      "6",IDC_BUTTON_6,87,59,21,17
+    PUSHBUTTON      "7",IDC_BUTTON_7,19,84,21,17
+    PUSHBUTTON      "8",IDC_BUTTON_8,53,84,21,17
+    PUSHBUTTON      "9",IDC_BUTTON_9,87,84,21,17
+    PUSHBUTTON      "*",IDC_BUTTON_STAR,19,109,21,17
+    PUSHBUTTON      "0",IDC_BUTTON_0,53,109,21,17
+    PUSHBUTTON      "DEL",IDC_BUTTON_DEL,87,109,21,17
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 241
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 141
+    END
+
+    IDD_DIALOG_COPY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 189
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 45
+    END
+
+    IDD_DIALOG_NEWBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 182
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 75
+    END
+
+    IDD_DIALOG_URL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 321
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 150
+    END
+
+    IDD_DIALOG_IMPORT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 221
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 111
+    END
+
+    IDD_DIALOG_UPDATE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 303
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 152
+    END
+
+    IDD_DIALOG_OPENBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 121
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 143
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#ifndef APSTUDIO_INVOKED\r\n"
+    "#include ""targetver.h""\r\n"
+    "#endif\r\n"
+    "#define APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "#include ""windows.h""\r\n"
+    "#undef APSTUDIO_HIDDEN_SYMBOLS\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_VIDEO_NEW    BITMAP                  "..\\Res\\icon_video_new.bmp"
+IDB_BITMAP_VIDEO        BITMAP                  "..\\Res\\icon_video.bmp"
+IDB_BITMAP_IMAGE        BITMAP                  "..\\Res\\icon_image.bmp"
+IDB_BITMAP_LOGO         BITMAP                  "..\\Res\\logo.bmp"
+IDB_BITMAP_HOME         BITMAP                  "..\\Res\\icon_home.bmp"
+IDB_BITMAP_FOLDER_NEW   BITMAP                  "..\\Res\\icon_folder_new.bmp"
+IDB_BITMAP_FOLDER       BITMAP                  "..\\Res\\icon_folder.bmp"
+IDB_BITMAP_AUDIO        BITMAP                  "..\\Res\\icon_audio.bmp"
+IDB_BITMAP_EXIT         BITMAP                  "..\\Res\\icon_Exit.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,125
+ PRODUCTVERSION 1,0,0,125
+ FILEFLAGSMASK 0x17L
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080004b0"
+        BEGIN
+            VALUE "FileDescription", "JinPlaye Application"
+            VALUE "FileVersion", "1, 0, 0, 125"
+            VALUE "InternalName", "jinPlayer"
+            VALUE "LegalCopyright", "Copyright (C) 2014"
+            VALUE "OriginalFilename", "JinPlaye.exe"
+            VALUE "ProductName", "JinPlaye Application"
+            VALUE "ProductVersion", "1, 0, 0, 125"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x800, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE 
+BEGIN
+    IDS_APP_TITLE           "JinPlayer"
+    IDC_JINPLAYER           "JINPLAYER"
+END
+
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

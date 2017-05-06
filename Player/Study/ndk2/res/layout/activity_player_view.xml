@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+    	      
+	 <RelativeLayout
+	     android:id="@+id/layView"
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:layout_centerInParent="true" >
+  
+         <SurfaceView
+	        android:id="@+id/svVideo"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:layout_centerInParent="true"/>
+
+    <RelativeLayout
+        android:id="@+id/layControls"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:background="@android:color/transparent"
+        android:visibility="visible" >
+
+        <ImageButton
+            android:id="@+id/btnPlay"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_centerInParent="true"
+            android:background="@layout/btn_play" />
+
+        <ImageButton
+            android:id="@+id/btnPause"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_centerInParent="true"
+            android:background="@layout/btn_pause" />
+
+        <SeekBar
+            android:id="@+id/sbPlayer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:max="100"
+            android:paddingBottom="30dp"
+            android:paddingLeft="8dp"
+            android:paddingRight="8dp"
+            android:paddingTop="7dp"
+            android:progress="0"
+            android:progressDrawable="@layout/seek_player"
+            android:thumb="@layout/seek_thumb" />
+
+    </RelativeLayout>
+
+	</RelativeLayout>
+	
+        <TextView
+            android:id="@+id/txtSubTT"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:gravity="center_horizontal"
+            android:paddingBottom="10dp"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+	 
+</RelativeLayout>

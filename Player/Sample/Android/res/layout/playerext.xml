@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rlMain"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:color/transparent" >
+    
+	 <RelativeLayout
+	     android:id="@+id/rlTopRLs"
+	     android:layout_width="fill_parent"
+	     android:layout_height="fill_parent"
+	     android:layout_centerInParent="true" >
+	    <SurfaceView
+	        android:id="@+id/svMain"
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent" 
+	        android:layout_centerInParent="true"/>
+    
+	 </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlTop"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="@drawable/bg_player_top_dynamic"
+        android:visibility="invisible">
+
+        <RelativeLayout
+            android:id="@+id/rlTop_Information"
+            android:layout_width="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true" >
+             
+            <TextView
+                android:id="@+id/tvCurrentTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/tvTimeDivider"
+                android:text="00:00:00"
+                style="@style/style_player_textview_general" /> 
+            
+            <TextView
+                android:id="@+id/tvTimeDivider"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=" / "
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"
+                style="@style/style_player_textview_general" />
+            
+            <TextView
+                android:id="@+id/tvTotalTime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@id/tvTimeDivider"
+                android:text="00:00:00"
+                style="@style/style_player_textview_general" /> 
+              
+            
+        </RelativeLayout>
+
+     
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/rlBottom"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@android:color/transparent"
+        android:layout_below="@id/rlTop"
+        android:visibility="invisible">
+        
+        <ImageButton
+            android:id="@+id/ibPlayPause"
+            android:layout_width="116dp"
+            android:layout_height="116dp"
+            android:layout_centerInParent="true"
+            android:background="@drawable/selector_player_pause" >
+        </ImageButton>
+
+        <RelativeLayout
+            android:id="@+id/rlTop_Seekbar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true" >
+
+            <SeekBar
+                android:id="@+id/sbMain"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="26dp"
+                android:layout_marginRight="20dp"
+                android:max="100"
+                android:paddingBottom="7dp"
+                android:paddingLeft="8dp"
+                android:paddingRight="8dp"
+                android:paddingTop="7dp"
+                android:progress="0"
+                android:progressDrawable="@drawable/layerlist_player_seek"
+                android:thumb="@drawable/selector_btn_seekbarthumb" />
+        </RelativeLayout>
+     
+    </RelativeLayout>
+    
+    <ProgressBar
+        android:id="@+id/pbLoadingProgress"
+        style="?android:attr/progressBarStyleLarge"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" >
+    </ProgressBar>
+
+    <TextView
+        android:id="@+id/tvLoadingProgress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="39%"
+        android:textAppearance="?android:attr/textAppearanceSmall" 
+        android:layout_centerInParent="true"
+        android:visibility="invisible"/>
+    
+    
+
+</RelativeLayout>

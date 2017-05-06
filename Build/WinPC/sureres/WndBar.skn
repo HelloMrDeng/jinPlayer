@@ -1,0 +1,16 @@
+[Bar]
+Type="Window"
+Left=100
+Top=200
+Width=500
+Height=120
+
+[BtnPlay]
+Type="Button"
+ID=1001
+Left=40
+Top=20
+BmpFile="btn_FF_pressed.bmp"
+BmpNum=1
+
+
